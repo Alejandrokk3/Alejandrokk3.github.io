@@ -1,0 +1,100 @@
+/* Paleta de Colores: Azul (#007bff), Verde (#28a745), Blanco (#ffffff), Gris Claro (#f8f9fa) */
+
+/* Estilos Generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f8f9fa; /* Fondo gris muy claro */
+    color: #343a40; /* Texto gris oscuro */
+}
+
+/* 1. Estilo del Encabezado */
+.cabecera-colorida {
+    background-color: #007bff; /* Azul vibrante */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 2. Estilo del Contenedor Principal (Flexbox) */
+.contenedor-cajas {
+    display: flex; /* Habilita Flexbox */
+    width: 80%;
+    max-width: 1100px;
+    margin: 30px auto; /* Centra el contenedor */
+    gap: 20px; /* Espacio entre las cajas */
+}
+
+/* 2.1. Estilo de la Caja de Enlaces (Menú) */
+.caja-enlaces {
+    flex: 0 0 250px; /* Ancho fijo de 250px, no crece ni encoge */
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    padding: 15px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.caja-enlaces h2 {
+    color: #007bff; /* Título azul */
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+.caja-enlaces ul {
+    list-style: none;
+    padding: 0;
+}
+
+.caja-enlaces a {
+    text-decoration: none;
+    color: #28a745; /* Enlaces en color verde */
+    display: block;
+    padding: 8px 0;
+    transition: background-color 0.3s;
+}
+
+.caja-enlaces a:hover {
+    background-color: #e9f7ef; /* Fondo verde claro al hacer hover */
+    color: #1e7e34;
+    font-weight: bold;
+}
+
+/* 2.2. Estilo de la Caja Principal (Contenido e Imagen) */
+.caja-principal {
+    flex-grow: 1; /* Ocupa el espacio restante */
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.caja-principal h2 {
+    color: #007bff; /* Título azul */
+}
+
+/* Estilo para la imagen */
+.contenedor-imagen {
+    text-align: center; /* Centra la imagen */
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f8f9fa; /* Fondo ligero para resaltar el área de la imagen */
+    border-radius: 6px;
+}
+
+.contenedor-imagen img {
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: auto;
+    border: 3px solid #28a745; /* Borde verde fuerte alrededor de la imagen */
+    border-radius: 4px;
+}
+
+/* 3. Estilo del Pie de Página */
+.pie-colorido {
+    background-color: #343a40; /* Gris muy oscuro */
+    color: #cccccc; /* Texto gris claro */
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px; /* Margen superior para separarlo del contenido */
+}
